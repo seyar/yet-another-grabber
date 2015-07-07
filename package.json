@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "lint": "node ./node_modules/.bin/jshint ./lib/* && node ./node_modules/.bin/jscs ./lib/*"
+    "lint": "node ./node_modules/.bin/jshint ./lib/ && node ./node_modules/.bin/jscs ./lib/"
   },
   "pre-commit": ["lint"],
   "author": "Seyar Chapuh",

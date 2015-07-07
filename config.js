@@ -3,8 +3,9 @@ module.exports = {
         rest: {
             urls: {
                 rss: [],
-                html: {
-                    'http://eda.ru': {
+                html: [
+                    {
+                        baseUrl: 'http://eda.ru',
                         amountCategories: 1,
                         amountPostsForEachCategory: 1,
                         categories: {
@@ -24,7 +25,7 @@ module.exports = {
                             video: 'object'
                         }
                     }
-                }
+                ]
             }
         }
     }

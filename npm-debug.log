@@ -7,13 +7,13 @@
 6 info lint grabber@0.0.1
 7 verbose unsafe-perm in lifecycle true
 8 info grabber@0.0.1 Failed to exec lint script
-9 error grabber@0.0.1 lint: `node ./node_modules/.bin/jshint ./lib/* && node ./node_modules/.bin/jscs ./lib/*`
+9 error grabber@0.0.1 lint: `node ./node_modules/.bin/jshint ./lib/ && node ./node_modules/.bin/jscs ./lib/`
 9 error Exit status 2
 10 error Failed at the grabber@0.0.1 lint script.
 10 error This is most likely a problem with the grabber package,
 10 error not with npm itself.
 10 error Tell the author that this fails on your system:
-10 error     node ./node_modules/.bin/jshint ./lib/* && node ./node_modules/.bin/jscs ./lib/*
+10 error     node ./node_modules/.bin/jshint ./lib/ && node ./node_modules/.bin/jscs ./lib/
 10 error You can get their info via:
 10 error     npm owner ls grabber
 10 error There is likely additional logging output above.
