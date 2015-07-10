@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "node ./node_modules/.bin/jshint ./lib/ && node ./node_modules/.bin/jscs ./lib/"
   },
-  "pre-commit": ["lint"],
+  "pre-commit": [
+    "lint"
+  ],
   "author": "Seyar Chapuh",
   "license": "MIT",
   "dependencies": {
@@ -17,8 +19,10 @@
     "vow": "^0.4.10"
   },
   "devDependencies": {
+    "chai": "^3.0.0",
     "git-hooks": "0.0.10",
     "jscs": "^1.13.1",
-    "jshint": "^2.8.0"
+    "jshint": "^2.8.0",
+    "sinon": "^1.15.4"
   }
 }
