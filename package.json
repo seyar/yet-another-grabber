@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "lint": "node ./node_modules/.bin/jshint ./lib/ && node ./node_modules/.bin/jscs ./lib/"
+    "lint": "node ./node_modules/.bin/jshint ./lib/ && node ./node_modules/.bin/jscs ./lib/",
+    "test": "node ./node_modules/.bin/mocha -R dot --check-leaks test/"
   },
   "pre-commit": [
     "lint"
@@ -23,6 +24,7 @@
     "git-hooks": "0.0.10",
     "jscs": "^1.13.1",
     "jshint": "^2.8.0",
+    "mocha": "^2.3.0",
     "sinon": "^1.15.4"
   }
 }

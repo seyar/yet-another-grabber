@@ -1,39 +1,39 @@
-var Helper = require('./../lib/helper');
+var utils = require('./../lib/utils');
 require('chai').should();
 
-describe('Helper test', function() {
+describe('utils test', function() {
     describe('translit', function() {
         it('should return passed str', function () {
-            Helper.translit('some').should.equal('some');
+            utils.translit('some').should.equal('some');
         });
         it('should return passed str', function () {
-            Helper.translit('!@#$%^&*()_+{}[]/').should.equal('!@#$%^&*()_+{}[]/');
+            utils.translit('!@#$%^&*()_+{}[]/').should.equal('!@#$%^&*()_+{}[]/');
         });
         it('should return passed str', function () {
-            Helper.translit('').should.equal('');
+            utils.translit('').should.equal('');
         });
         it('should throw error', function () {
             var a = function () {
-                Helper.translit(55);
+                utils.translit(55);
             };
             a.should.throw('Unexpected type of param');
         });
         it('should throw error', function () {
             var a = function () {
-                Helper.translit(['a', 'b']);
+                utils.translit(['a', 'b']);
             };
             a.should.throw('Unexpected type of param');
         });
         it('should translitarate', function () {
-            Helper.translit('соме').should.equal('some');
+            utils.translit('соме').should.equal('some');
         });
     });
     describe('lastPartUrl', function() {
         it('should return last part', function () {
-            Helper.lastUrlPart('http://some/some2/last').should.equal('last');
+            utils.lastUrlPart('http://some/some2/last').should.equal('last');
         });
         it('should return all', function () {
-            Helper.lastUrlPart('http:somesome2last').should.equal('http:somesome2last');
+            utils.lastUrlPart('http:somesome2last').should.equal('http:somesome2last');
         });
     });
 });

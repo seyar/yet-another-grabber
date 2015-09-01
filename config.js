@@ -5,6 +5,7 @@ module.exports = {
                 rss: [],
                 html: [
                     {
+                        adapter: 'edaru',
                         baseUrl: 'http://eda.ru',
                         amountCategories: 1,
                         amountPostsForEachCategory: 1,
