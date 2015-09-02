@@ -36,4 +36,16 @@ describe('utils test', function() {
             utils.lastUrlPart('http:somesome2last').should.equal('http:somesome2last');
         });
     });
+    describe('cleanText', function() {
+        //it('should clean', function () {
+        //    var str = '<div>123</div><!--456-->';
+        //    utils.striptags(str).should.equal('123');
+        //});
+    });
+    describe('striptags', function() {
+        it('should strip all tags', function () {
+            var str = '<div>123</div><div>456</div>';
+            utils.striptags(str).should.equal('123456');
+        });
+    });
 });
