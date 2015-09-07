@@ -37,10 +37,10 @@ describe('utils test', function() {
         });
     });
     describe('cleanText', function() {
-        //it('should clean', function () {
-        //    var str = '<div>123</div><!--456-->';
-        //    utils.striptags(str).should.equal('123');
-        //});
+        it('should clean', function () {
+            var str = '<div>123</div><!--456-->';
+            utils.striptags(str).should.equal('<div>123</div>');
+        });
     });
     describe('striptags', function() {
         it('should strip all tags', function () {

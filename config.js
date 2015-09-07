@@ -17,7 +17,7 @@ module.exports = {
                             querySelector: '.b-recipe-widget__name a[id^="link-recipewidget"]'
                         },
                         post: {
-                            title: '.b-directions h2',
+                            title: 'h1',
                             text: '.b-directions .instructions',
                             ingridients: [
                                 '.ingredient a[id^="link-recipe-ingredient"]',
