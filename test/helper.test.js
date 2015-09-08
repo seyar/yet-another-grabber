@@ -37,9 +37,22 @@ describe('utils test', function() {
         });
     });
     describe('cleanText', function() {
-        it('should clean', function () {
-            var str = '<div>123</div><!--456-->';
-            utils.striptags(str).should.equal('<div>123</div>');
+        it.only('should clean comments, scripts, carriage returns', function () {
+            var str = '<div>123</div><!--456-->\
+            <link rel="stylesheet" href="#"/>\
+            <link rel="stylesheet" href="#">\
+            <!-- 45454 -->\
+            <style>\
+            h1 { color: red;}\
+            h2 { \
+                color: red;\
+            }\
+            </style>\
+            <script>somecode();</script>\
+            <script type="application/javascript">\
+                alert("");\
+            </script>';
+            utils.cleanText(str).should.equal('<div>123</div>');
         });
     });
     describe('striptags', function() {
