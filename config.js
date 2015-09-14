@@ -24,6 +24,27 @@ module.exports = {
                     video: 'object'
                 }
             }
+            //{
+            //    adapter: 'findfoodru',
+            //    baseUrl: 'http://findfood.ru',
+            //    amountCategories: 1,
+            //    //amountPostsForEachCategory: 1,
+            //    categories: {
+            //        url: '/',
+            //        querySelector: '.grid_3 ul a'
+            //    },
+            //    postsLinks: {
+            //        querySelector: '#yw0 .items a:nth-child(1)'
+            //    },
+            //    post: {
+            //        title: 'h1',
+            //        text: 'div[itemprop=recipeInstructions]',
+            //        ingridients: [
+            //            '.ingredient a[id^="link-recipe-ingredient"]',
+            //            '.ingredient .ingredient-measure-amount span'
+            //        ]
+            //    }
+            //}
         ]
     },
     dbName: 'rest'
