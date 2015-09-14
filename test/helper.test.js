@@ -43,6 +43,7 @@ describe('utils test', function() {
             <link rel="stylesheet" href="#">\
             <!-- 45454 -->\
             <style>\
+            s&nbsp;tyle\
             h1 { color: red;}\
             h2 { \
                 color: red;\
